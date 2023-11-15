@@ -1,0 +1,14 @@
+AMSTRONG NUMBER
+
+num=int(input("Enter a num:"))
+temp=num
+sum=0
+power=len(str(num))
+while num!=0:
+    num1=num%10
+    sum+=num1**power
+    num=num//10
+if sum==temp:
+    print(temp,"is a amstrong number")
+else:
+    print(temp,"is not a amstrong number")
